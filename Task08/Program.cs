@@ -14,5 +14,5 @@ if (number > 0)
             Console.Write($"{count} ");
             }
             count++;  //count = count +1    
-        };
+        }
 }

@@ -7,9 +7,17 @@
 
 int number = new Random().Next(100, 1000);
 Console.WriteLine($"Случайное число из отрезка 100 - 999 => {number}");
-int Digit = number / 10;
-// Console.WriteLine($"{firstDigit}");
-int result = Digit % 10;
-Console.WriteLine($"{result}");
+
+// Метод
+int SecondDigit(int num)
+{
+    int Didit = (num / 10) % 10;
+    return Didit;
+}
+
+int secondDigit = SecondDigit(number);
+Console.WriteLine($"Вторая цифра числа равна {secondDigit}");
+
+
 
 

@@ -15,11 +15,11 @@ Console.WriteLine($"Случайное число из отрезка 10 - 99 =>
 //else Console.WriteLine($"Наибольшая цифра числа равна {secondDigit}");
 
 
-int MaxDigit (int num)
+int MaxDigit(int num)
 {
-   int firstDigit = num / 10; // 78 / 10 = 7
-int secondDigit = num % 10; // 78 % 10 = 8
-   return firstDigit > secondDigit ? firstDigit : secondDigit; 
+    int firstDigit = num / 10; // 78 / 10 = 7
+    int secondDigit = num % 10; // 78 % 10 = 8
+    return firstDigit > secondDigit ? firstDigit : secondDigit;
 }
 
 int maxDigit = MaxDigit(number);

@@ -1,17 +1,25 @@
-﻿// Напишите программу, которая будет принимать на вход два числа
-// выводить, является ли второе число кратным первому. 
-// Если число 1 не кратно числу 2, то программа выводит остаток от деления. 
-// 34, 5 -> не кратно, остаток 4 
-// 16, 4 -> кратно
+﻿// Задача 13: Напишите программу, которая выводит третью цифру заданного числа 
+// или сообщает, что третьей цифры нет.
+
+// 645 -> 5
+// 78 -> третьей цифры нет
+// 32679 -> 6
 
 
-Console.WriteLine("Введите первое число: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
-int number2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите любое  целое число: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-if (number1 % number2 == 0)
-Console.WriteLine("Кратно");
-else
-Console.WriteLine($"Не кратно, остаток {number1 % number2}");
+int firstDigit = num % 10;
 
+int secondDigit = num / 10;
+if (num > 999)
+    {
+        while (secondDigit > 999)
+{
+    secondDigit = secondDigit / 10;
+}
+    }    
+if (num > 99) Console.WriteLine($"Третья цифра числа: {firstDigit}");
+
+else 
+Console.WriteLine("Третьей цифры нет");
