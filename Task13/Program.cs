@@ -7,19 +7,20 @@
 
 
 Console.WriteLine("Введите любое  целое число: ");
-int num = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
-int firstDigit = num % 10;
-
-int secondDigit = num / 10;
-if (num > 999)
-    {
-        while (secondDigit > 999)
+//int firstDigit = num % 10;
+// int secondDigit = number / 10;
+int x = number;
+if (x > 100)
 {
-    secondDigit = secondDigit / 10;
+    while (number > 999)
+    {
+        number = number / 10;
+    }
+    int num = number % 10;
+    Console.WriteLine($"Третья цифра числа: {num}");
 }
-    }    
-if (num > 99) Console.WriteLine($"Третья цифра числа: {firstDigit}");
 
-else 
-Console.WriteLine("Третьей цифры нет");
+else
+    Console.WriteLine("Третьей цифры нет");
