@@ -5,14 +5,14 @@
 // 782 -> 8
 // 918 -> 1
 
-int number = new Random().Next(100, 1000);
-Console.WriteLine($"Случайное число из отрезка 100 - 999 => {number}");
+Console.WriteLine("Введите трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
 // Метод
 int SecondDigit(int num)
 {
-    int Didit = (num / 10) % 10;
-    return Didit;
+    int Digit = (num / 10) % 10;
+    return Digit;
 }
 
 int secondDigit = SecondDigit(number);
