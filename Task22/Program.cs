@@ -13,9 +13,10 @@ void SquareTable(int num)
     {
         for (int i = 1; i <= num; i++)
         {
-            Console.WriteLine($"{i} -> {i * i}");
+            Console.WriteLine($"|{i,4} | {i * i,4}|");
         }
     }
     else Console.WriteLine("Введите положительное число");
 }
 SquareTable(n);
+
