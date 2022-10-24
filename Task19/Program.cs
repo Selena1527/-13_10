@@ -12,8 +12,8 @@ int n = Convert.ToInt32(Console.ReadLine());
 
 int A1 = n / 10000;
 int A2 = n % 10;
-int B1 = n / 1000;
-int B2 = n % 100;
+int B1 = (n / 1000) % 10;
+int B2 = (n % 10) % 10;
 
 bool Revers(int N, int A1, int A2, int B1, int B2)
 {
