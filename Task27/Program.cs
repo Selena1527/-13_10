@@ -18,6 +18,9 @@ int SumNumber(int num)
     }
     return sum;
 }
-
-int sumNumber = SumNumber(number);
-Console.WriteLine($"Сумма цифр числа равна {sumNumber}");
+if(number > 0)
+{
+    int sumNumber = SumNumber(number);
+    Console.WriteLine($"Сумма цифр числа равна {sumNumber}");
+}
+else Console.WriteLine("Введите положительное число");
