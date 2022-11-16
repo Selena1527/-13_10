@@ -14,15 +14,22 @@ int[] CreateArrayRndInt(int size, int min, int max)
     return array;
 }
 
-int[] InversionArray(int[] array)
+void InversionArray(int[] array)
 {
-    int[] newArray = new int[array.Length];
     for (int i = 0; i < array.Length; i++)
     {
-        newArray[i] = array[i] * (-1);
+        array[i] *= -1;
     }
-    return newArray;
 }
+// int[] InversionArray(int[] array)
+// {
+//     int[] newArray = new int[array.Length];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         newArray[i] = array[i] * (-1);
+//     }
+//     return newArray;
+// }
 
 void PrintArray(int[] array)
 {
@@ -36,6 +43,7 @@ void PrintArray(int[] array)
 }
 
 int[] array = CreateArrayRndInt(18, -10, 10);
-int[] inversionArray = InversionArray(array);
+// int[] inversionArray = InversionArray(array);
 PrintArray(array);
-PrintArray(inversionArray);
+InversionArray(array);
+PrintArray(array);
