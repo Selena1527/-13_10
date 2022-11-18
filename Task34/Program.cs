@@ -27,21 +27,8 @@ void PrintArray(int[] array)
     Console.WriteLine("]");
 }
 
-// int CountPositiveElem(int[] array)
-// {
-//     int count = 0;
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         if (array[i] % 2 == 0) count++;
-//     }
-//     return count;
-// }
-
 int[] arr = CreateArrayRndInt(5, 100, 1000);
 PrintArray(arr);
-
-// int countPositiveElem = CountPositiveElem(arr);
-// Console.WriteLine($"Колличество четных чисел = {arr}");
 
 int CountPositiveElem(int[] array)
 {
