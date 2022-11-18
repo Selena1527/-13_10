@@ -36,12 +36,12 @@ int[] GetSumPositiveNegativeElem(int[] array)
         if (array[i] > 0) sumPositive += array[i];
         else sumNegative += array[i];
     }
-    return new int[]{sumPositive, sumNegative};
+    return new int[] { sumPositive, sumNegative };
 }
 
 
- int[] arr = CreateArrayRndInt(12, -9, 9);
- PrintArray(arr);
- int[] getSumPositiveNegativeElem = GetSumPositiveNegativeElem(arr);
+int[] arr = CreateArrayRndInt(12, -9, 9);
+PrintArray(arr);
+int[] getSumPositiveNegativeElem = GetSumPositiveNegativeElem(arr);
 Console.WriteLine($"Сумма положительных эллементов = {getSumPositiveNegativeElem[0]}");
 Console.WriteLine($"Сумма отрицательных эллементов = {getSumPositiveNegativeElem[1]}");
