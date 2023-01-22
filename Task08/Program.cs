@@ -16,3 +16,7 @@ if (number > 0)
             count++;  //count = count +1    
         }
 }
+else
+{
+    Console.WriteLine("Введите положительное число");
+}
