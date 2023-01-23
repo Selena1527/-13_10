@@ -11,12 +11,12 @@ Console.WriteLine("Введите пятизначное число: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 
-bool Revers(int N)
+bool Revers(int num)
 {
-    int a1 = N / 10000;
-    int a2 = N % 10;
-    int b1 = (N / 1000) % 10;
-    int b2 = (N / 10) % 10;
+    int a1 = num / 10000;
+    int a2 = num % 10;
+    int b1 = (num / 1000) % 10;
+    int b2 = (num / 10) % 10;
     if (a1 == a2 && b1 == b2) return true;
     return false;
 }
