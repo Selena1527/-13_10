@@ -11,9 +11,13 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 
 int Exponentiation(int numA, int numB)
 {
-if (numB == 0) return 1;
-return numA * Exponentiation(numA, numB-1);
+    if (numB == 0) return 1;
+    return numA * Exponentiation(numA, numB - 1);
 }
 
-int result = Exponentiation(numberA, numberB);
-Console.WriteLine($"число {numberA} в целую степень {numberB} => {result}");
+if (numberB < 0) Console.WriteLine("Введено отрицательное число В");
+else
+{
+    int result = Exponentiation(numberA, numberB);
+    Console.WriteLine($"число {numberA} в целую степень {numberB} => {result}");
+}
