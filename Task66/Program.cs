@@ -10,14 +10,6 @@ Console.WriteLine("Введите 2 числа");
 int number1 = Convert.ToInt32(Console.ReadLine());
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-// int SumNaturNum(int m, int n)
-// {
-//     if (num == 0) return 0;
-//     return num % 10 + SumElemNamber(num / 10);
-// }
-//  int sumNaturNum = SumNaturNum(number1, number2);
-// Console.WriteLine($"сумма натуральных элементов в промежутке от M до N = {sumNaturNum}");
-
 int SumNaturNum(int m, int n)
 {
     if (m == 0) return (n * (n + 1)) / 2;            
